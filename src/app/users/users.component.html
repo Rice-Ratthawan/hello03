@@ -1,6 +1,8 @@
-First name: <input (keyup.enter)="saveData()" (keyup)="inputYourName($event)" />
+First name:
+<input (keyup.enter)="saveData()" (keyup)="inputYourName($event)" />
 <br />
-Last name: <input #lastname (keyup.enter)="saveData()" (keyup)="inputLastName(lastname.value)" />
+Last name:
+<input #lastname (keyup.enter)="saveData()" (keyup)="inputLastName(lastname.value)" />
 <br />
 <button (keyup.enter)="saveData()" (click)="saveData()">Save
 </button>
@@ -9,7 +11,7 @@ Last name: <input #lastname (keyup.enter)="saveData()" (keyup)="inputLastName(la
 <p>Count = {{ selected }}/{{ users.length }}</p>
 
 <ul *ngIf="show">
-  <li *ngFor="let user of users; let i = index" [class.selected]="user.status" (click)="doToggle(i)">
-    {{ user.name }}
-  </li>
+    <li *ngFor="let user of users; let i = index" [class.selected]="user.status" (click)="doToggle(i)">
+        {{ user.name }}
+    </li>
 </ul>

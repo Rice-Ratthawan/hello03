@@ -10,13 +10,21 @@ export class UsersComponent implements OnInit {
 
 
   users = []; //Empty Array
-  firstName = [''];
-  lastName = [''];
+  firstName = '';
+  lastName = '';
   show = true; //show: boolean = true->show, false->not show
   selected = 0;
 
   ngOnInit(): void {
 
+  }
+
+  inputYourName(event: any): void {
+    this.firstName = event.target.value;
+  }
+
+  inputLastName(lastname: string): void {
+    this.lastName = lastname;
   }
 
   saveData(): void {
