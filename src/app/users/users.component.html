@@ -1,8 +1,8 @@
-First name: <input (keyup.enter)="save()" (keyup)="inputYourName($event)" />
+First name: <input (keyup.enter)="saveData()" (keyup)="inputYourName($event)" />
 <br />
-Last name: <input #lastname (keyup.enter)="save()" (keyup)="inputLastName(lastname.value)" />
+Last name: <input #lastname (keyup.enter)="saveData()" (keyup)="inputLastName(lastname.value)" />
 <br />
-<button (keyup.enter)="save()" (click)="save()">Save
+<button (keyup.enter)="saveData()" (click)="saveData()">Save
 </button>
 <br />
 
